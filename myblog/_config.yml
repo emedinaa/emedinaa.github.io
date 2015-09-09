@@ -1,0 +1,11 @@
+# Site settings
+title: emedinaa.io
+email: emedinaa@gmail.com
+description: "Android, IOS, Interactive Developer."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://emedinaa.github.io/" # the base hostname & protocol for your site
+twitter_username: eduardomedina
+github_username:  emedinaa
+
+# Build settings
+markdown: kramdown
