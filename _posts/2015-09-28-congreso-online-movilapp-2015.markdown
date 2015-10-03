@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Congreso online MóvilAPp 2015"
-date:   2015-10-01 20:23:27
-categories: android welcome
+date:   2015-09-28 20:23:27
+categories: android conferencias
 ---
 Les comparto la Charla que dí en el Congreso Online MóvilAPp 2015.
 
