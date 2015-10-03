@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+#Eduardo Medina A. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Especialista en desarrollo de aplicaciones Android y IOS [http://emedinaa.github.io/](http://emedinaa.github.io/), instructor de aplicaciones Móviles en el instituto ISIL y miembro de las comunidades [GDGLima](http://www.gdglima.com/#!/about) y [Android.pe](https://www.facebook.com/groups/androidpe). 
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
