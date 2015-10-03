@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Android"
 date:   2015-10-01 20:23:27
-categories: jekyll update
+categories: android welcome
 ---
 Hola !
 
