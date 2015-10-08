@@ -24,7 +24,7 @@ Ejemplo de como utilizar el SDK de Google Analytics para Android.
 </resources>
 {% endhighlight %}
 
-* Importar librería con Gradle
+* Agregamos las dependencias de GA y Android Support en el build.gradle de la App
 	* Google Play Services
 	* Android Support Library v7
 	
