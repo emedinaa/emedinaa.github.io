@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Realm en Android"
+title:  "Realm , una nueva base de datos para Android y IOS."
 date:   2015-10-08 20:23:27
 categories: android patterns
 ---
-Realm , una nueva base de datos para Android y IOS.
-
 Ejemplo de como utilizar Realm en Android. [https://realm.io/][realm] 
 
 Si han trabajado con SQlite o con algún ORM como por ejemplo ORMLite, GreenDAO y desean probar otra alternativa les recomiendo REALM. No es un sqlite, no es otro ORM para SQlite, es otra base de datos, mucho más rápida , esta hecha en C++ y es compatible para Android y IOS.
