@@ -2,7 +2,7 @@
 layout: post
 title:  "Realm , una nueva base de datos para Android y IOS."
 date:   2015-11-07 20:23:27
-categories: android patterns
+categories: android db
 ---
 Ejemplo de como utilizar Realm en Android. [https://realm.io/][realm] 
 
