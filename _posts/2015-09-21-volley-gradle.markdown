@@ -10,13 +10,36 @@ Les comparto un Tip con los pasos para generar el jar o aar de la librería Voll
 	Log.v(TAG, "Volley & Gradle");
 {% endhighlight %}
 
-El repositorio en [github][repo] del ejemplo.
+* Paso 1
 
-Te invito a visitar mi [github][gb] si deseas encontrar ejemplos y tips relacionados a Android. Mi web [eduardomedina.me][web] que aún esta en construcción :) , y si deseas compartir y discutir sobre temas de desarrollo en Android , te recomiendo visitar el grupo en facebook [android.pe][androidpe].
+Descargar la librería Volley [https://android.googlesource.com/platform/frameworks/volley][volley] 
+"git clone https://android.googlesource.com/platform/frameworks/volley"
+
+* Paso 2
+
+Descargar gradle http://gradle.org/gradle-download/
+
+* Paso 3
+
+Identificar el path del SDK de Android y configurar ANDROID_HOME export ANDROID_HOME=/Users/emedinaa/Dev/android/sdk PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+* Paso 4
+
+Ejecutar el comando gradle build en la carpeta raiz de Volley
+	/Users/emedinaa/Documents/gradle/gradle-2.5/bin/./gradle build --x test
+	"BUILD SUCCESSFUL"
+
+* Paso 5
+
+El jar y el aar build/intermediates/bundles/release/classes.jar build/outputs/aar/volley-release.aar
+
+
+El proyecto está disponible para su descarga en mi [GitHub][repo].
 
 [gb]:      https://github.com/emedinaa
 [web]:   http://www.eduardomedina.me/
 [androidpe]: https://www.facebook.com/groups/androidpe/
 [repo]: https://github.com/emedinaa/android_volley_gradle
 [gdglima]: http://www.gdglima.com/
+[volley]: https://android.googlesource.com/platform/frameworks/volley
 

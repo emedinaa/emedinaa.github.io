@@ -4,15 +4,26 @@ title:  "Android Parcelable Generator - Plugin AS"
 date:   2015-09-14 20:23:27
 categories: android androidstudio
 ---
-Ejemplo de como utilizar el plugin para Android Studio "Android Parcelable code generator"
+Ejemplo de como utilizar el plugin  "Android Parcelable code generator" para Android Studio
 
 {% highlight java %}
 	Log.v(TAG, "Android Parcelable Generator Plugin Android Studio");
 {% endhighlight %}
 
-El repositorio en [github][repo] del ejemplo.
+* Instalación
+![Intalación del plugin]({{ site.url }}/assets/parcelable/PluginAS_AndroidParcelable.png)
 
-Te invito a visitar mi [github][gb] si deseas encontrar ejemplos y tips relacionados a Android. Mi web [eduardomedina.me][web] que aún esta en construcción :) , y si deseas compartir y discutir sobre temas de desarrollo en Android , te recomiendo visitar el grupo en facebook [android.pe][androidpe].
+* Creamos la entidad "PersonEntity"
+![Entidad]({{ site.url }}/assets/parcelable/Generate.png)
+
+* Seleccionamos los campos
+![Fields]({{ site.url }}/assets/parcelable/Fields.png)
+
+* El resultado sería el siguiente 
+![Parcelable]({{ site.url }}/assets/parcelable/Parcelable.png)
+
+
+El proyecto está disponible para su descarga en mi [GitHub][repo].
 
 [gb]:      https://github.com/emedinaa
 [web]:   http://www.eduardomedina.me/
