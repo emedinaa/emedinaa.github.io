@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "View Injection con Butternife"
-date:   2015-11-07 28:23:27
+date:   2015-11-08 28:23:27
 categories: android view
 ---
 
