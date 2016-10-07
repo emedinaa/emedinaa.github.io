@@ -2,7 +2,69 @@
 layout: default
 ---
 
+<style type="text/css">
+
+.share-page {
+    text-align: center;
+    background: $secondary-color;
+    color: $light-color;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5 * $spacing-unit 0;
+
+    a {
+        font-weight: 700;
+        color: #fff;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+    }
+}
+</style>
+
 <div class="home">
+
+<h1 class="page-heading">Repositorios en github sobre desarrollo para Android</h1>
+<ul>
+  <li>
+    Android
+    <ul>
+      <li> Fragments y Activities <a href="https://github.com/emedinaa/fragment_activity">https://github.com/emedinaa/fragment_activity</a></li>
+    </ul>
+  </li>
+  <li>
+    Kotlin
+      <ul>
+        <li>Kotlin MVP <a href="https://github.com/emedinaa/Kotlin-mvp">https://github.com/emedinaa/Kotlin-mvp</a></li>
+        <li>Kotlin Kata <a href="https://github.com/emedinaa/FizzBuzz-Kata-Kotlin">https://github.com/emedinaa/FizzBuzz-Kata-Kotlin</a></li>
+        <li>Pokedex Kotlin <a href="https://github.com/emedinaa/Pokedex-Kotlin">https://github.com/emedinaa/Pokedex-Kotlin</a></li>
+      </ul>
+  </li>
+  <li>
+   Arquitectura
+      <ul>
+          <li>Android Clean Architecture <a hred="https://github.com/emedinaa/android-clean-architecture">https://github.com/emedinaa/android-clean-architecture</a></li>
+          <li>Android MVP <a hred="https://github.com/emedinaa/android-mvp">https://github.com/emedinaa/android-mvp</a></li>
+      </ul>
+  </li>
+  <li>
+    Animaciones
+      <ul>
+          <li>Canvas Animation <a hred="https://github.com/emedinaa/android_canvas_animation">https://github.com/emedinaa/android_canvas_animation</a></li>
+          <li>Rebound Effect <a hred="https://github.com/emedinaa/rebound_effect_button">https://github.com/emedinaa/rebound_effect_button</a></li>
+      </ul>
+  </li>
+  <li>Cloud
+      <ul>
+          <li> Android + BackendLess <a href="https://github.com/emedinaa/Android-Backendless">https://github.com/emedinaa/Android-Backendless</a></li>
+          <li> Android + Parse <a href="https://github.com/emedinaa/android_parse">https://github.com/emedinaa/android_parse</a></li>
+          <li> Android + PHP <a href="https://github.com/emedinaa/android_volley_php">https://github.com/emedinaa/android_volley_php</a></li>
+          <li> Android + Drupal <a href="https://github.com/emedinaa/android_drupal">https://github.com/emedinaa/android_drupal</a></li>
+      </ul>
+  </li>
+</ul> 
 
   <h1 class="page-heading">Posts</h1>
 
@@ -19,5 +81,12 @@ layout: default
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <div class="share-page">
+    Compartir en &rarr;
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+  </div>
 
 </div>
