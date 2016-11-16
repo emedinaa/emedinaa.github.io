@@ -5,12 +5,12 @@ date:   2016-11-015 20:23:27
 categories: android helper sharedpreferences
 ---
 
-# SharedPreferencesHelper
+* SharedPreferencesHelper
 SharedPreferencesHelper maneja las preferencias locales compartidas en nuestra Aplicación Android.
 
 Shared Preferences(SP) es una de las opciones de persistencia de datos en Android que te permite almacenar  en tuplas, es decir <Key, Value>, elementos  primitivos como String, Boolean,Double o  Integer. Por ejemplo para guardar el email o id del usuario al autenticarse , el puntaje obtenido o alguna opción seleccionada que necesitemos usar luego en nuestra App.
 
-## El problema
+* El problema
 
 He visto en algunas oportunidades que en el Activity o Fragment invocan el sharedpreferences , realizan operaciones como guardar , editar o eliminar algún valor . Este  código suelto, repetitivo , difícil de encontrar,  sobre todo cuando necesitamos hacer cambios, con el tiempo nos podrá generar errores. Además, sería una responsabilidad adicional que agregaríamos a la vista, lo cual no es correcto.
 
@@ -24,7 +24,7 @@ Un ejemplo :
   }
 {% endhighlight %}
 
-## Una solución
+* Una solución
 
 Seria genial tener un clase  con la responsabilidad de manejar las operaciones del sharedpreferences y que podamos probar con test cases. A este clase la llamaré SharedPreferencesHelper. 
 
@@ -166,11 +166,11 @@ Output
   V/MainActivity: userSp User{id=100, name='Eduardo Medina', email='emedinaa@gmail.com'}
 {% endhighlight %}
 
-## Conclusión
+* Conclusión
 
 Siempre es sano crear helpers que nos ayuden en tareas rutinarias,con responsabilidades definidas , que podamos probar y mantener el código ordenado y limpio. No recomiendo usar statics, ya saben… , es la solución fácil y podría ocultar dependencias que perjudican cuando hacemos testing.
 
-References :
+* References :
 
 - [Saving Data][asp]
 
