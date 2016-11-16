@@ -180,10 +180,39 @@ References :
 
 El proyecto está disponible para su descarga en mi [GitHub][repo].
 
+<div class="share-page">
+    Compartir en &rarr;
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div>
+
 
 [gb]:    https://github.com/emedinaa
 [web]:   http://emedinaa.github.io/
 [androiddevperu]: https://medium.com/@androiddevperu
 [repo]: https://github.com/emedinaa/sharedpreferenceshelper
+
+<style type="text/css">
+
+.share-page {
+    text-align: center;
+    background: $secondary-color;
+    color: $light-color;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5 * $spacing-unit 0;
+
+    a {
+        font-weight: 700;
+        color: #fff;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+    }
+}
+</style>
 
 
