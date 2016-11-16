@@ -8,21 +8,21 @@ categories: android helper sharedpreferences
 # SharedPreferencesHelper
 SharedPreferencesHelper maneja las preferencias locales compartidas en nuestra Aplicación Android.
 
-Shared Preferences(SP) es una de las opciones de persistencia de datos en Android que te permite almacenar  en tuplas, es decir ``` <Key, Value> ```, elementos  primitivos como String, Boolean,Double o  Integer. Por ejemplo para guardar el email o id del usuario al autenticarse , el puntaje obtenido o alguna opción seleccionada que necesitemos usar luego en nuestra App.
+Shared Preferences(SP) es una de las opciones de persistencia de datos en Android que te permite almacenar  en tuplas, es decir <Key, Value>, elementos  primitivos como String, Boolean,Double o  Integer. Por ejemplo para guardar el email o id del usuario al autenticarse , el puntaje obtenido o alguna opción seleccionada que necesitemos usar luego en nuestra App.
 
 ## El problema
 
 He visto en algunas oportunidades que en el Activity o Fragment invocan el sharedpreferences , realizan operaciones como guardar , editar o eliminar algún valor . Este  código suelto, repetitivo , difícil de encontrar,  sobre todo cuando necesitamos hacer cambios, con el tiempo nos podrá generar errores. Además, sería una responsabilidad adicional que agregaríamos a la vista, lo cual no es correcto.
 
 Un ejemplo : 
-```
+{% highlight java %}
   private void saveEmail(String email){
     SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
     SharedPreferences.Editor editor = sharedPref.edit();
     editor.putString("myEmail", email);
     editor.commit();
   }
-```
+{% endhighlight %}
 
 ## Una solución
 
@@ -30,12 +30,12 @@ Seria genial tener un clase  con la responsabilidad de manejar las operaciones d
 
 ¿Qué responsabilidades tendría?
   - Limpiar el SP
-  - Agregar algún ``` <Key, Value> ```
-  - Editar algún ``` <Key, Value> ```
-  - Obtener algún ``` <Key, Value> ```
+  - Agregar algún <Key, Value> 
+  - Editar algún <Key, Value> 
+  - Obtener algún <Key, Value> 
 
 Creamos un interfaz que defina el comportamiento del SP Helper
-```
+{% highlight java %}
   package com.emedinaa.sharedpreferences.storage;
 
   import com.emedinaa.sharedpreferences.entity.User;
@@ -54,10 +54,10 @@ Creamos un interfaz que defina el comportamiento del SP Helper
       void clear();
   }
 
-```
+{% endhighlight %}
 
 Luego la implementación
-```
+{% highlight java %}
   package com.emedinaa.sharedpreferences.storage;
 
   import android.content.SharedPreferences;
@@ -121,11 +121,11 @@ Luego la implementación
       }
   }
 
-```
+{% endhighlight %}
 Ejemplos de como usar el Helper
 
 - Guardar y obtener el Email
-```
+{% highlight java %}
     private void preferencesEmail() {
         SharedPreferences sharedPreferences= getSharedPreferences(MY_SHARED_PREFERENCES, Context.MODE_PRIVATE);
         GsonHelper gsonHelper= new GsonHelper();
@@ -136,15 +136,15 @@ Ejemplos de como usar el Helper
 
         Log.v(TAG, "email "+email);
     }
-```
+{% endhighlight %}
 Output 
-```
+{% highlight java %}
   V/MainActivity: email emedinaa@gmail.com
-```
+{% endhighlight %}
 
 
 - Guardar y obtener una Entidad 
-```
+{% highlight java %}
     private void preferencesGson() {
         SharedPreferences sharedPreferences= getSharedPreferences(MY_SHARED_PREFERENCES, Context.MODE_PRIVATE);
         GsonHelper gsonHelper= new GsonHelper();
@@ -160,11 +160,11 @@ Output
 
         Log.v(TAG, "userSp "+userSp);
     }
-```
+{% endhighlight %}
 Output 
-```
+{% highlight java %}
   V/MainActivity: userSp User{id=100, name='Eduardo Medina', email='emedinaa@gmail.com'}
-```
+{% endhighlight %}
 
 ## Conclusión
 
