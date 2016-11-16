@@ -6,6 +6,7 @@ categories: android helper sharedpreferences
 ---
 
 * SharedPreferencesHelper
+
 SharedPreferencesHelper maneja las preferencias locales compartidas en nuestra Aplicación Android.
 
 Shared Preferences(SP) es una de las opciones de persistencia de datos en Android que te permite almacenar  en tuplas, es decir <Key, Value>, elementos  primitivos como String, Boolean,Double o  Integer. Por ejemplo para guardar el email o id del usuario al autenticarse , el puntaje obtenido o alguna opción seleccionada que necesitemos usar luego en nuestra App.
@@ -122,6 +123,45 @@ Luego la implementación
   }
 
 {% endhighlight %}
+
+En el caso que necesitemos guardar una Entidad podemos usar GSON , con esta libreria podemos convertir el objeto a json String y luego  de json String a Entidad.
+
+{% highlight java %}
+package com.emedinaa.sharedpreferences.utils;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.json.JSONObject;
+
+/**
+ * Created by eduardo on 12/11/16.
+ */
+public class GsonHelper {
+
+    public  JSONObject objectToJSON(Object obj)
+    {
+        GsonBuilder gsonb = new GsonBuilder();
+        Gson gson = gsonb.create();
+        JSONObject jsonObject = null;
+        try {
+            jsonObject = new JSONObject(gson.toJson(obj));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+    public <T>T jsonToObject(String json,Class<T> cls){
+
+        GsonBuilder gsonb = new GsonBuilder();
+        Gson gson = gsonb.create();
+        return gson.fromJson(json, cls);
+    }
+}
+
+{% endhighlight %}
+
 Ejemplos de como usar el Helper
 
 - Guardar y obtener el Email
