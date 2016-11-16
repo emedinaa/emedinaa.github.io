@@ -172,9 +172,9 @@ Siempre es sano crear helpers que nos ayuden en tareas rutinarias,con responsabi
 
 References :
 
-- [https://developer.android.com/training/basics/data-storage/shared-preferences.html](https://developer.android.com/training/basics/data-storage/shared-preferences.html)
+- [Saving Data][asp]
 
-- [https://developer.android.com/reference/android/content/SharedPreferences.html](https://developer.android.com/reference/android/content/SharedPreferences.html)
+- [SharedPreferences][asp1]
 
 
 
@@ -192,6 +192,8 @@ El proyecto está disponible para su descarga en mi [GitHub][repo].
 [web]:   http://emedinaa.github.io/
 [androiddevperu]: https://medium.com/@androiddevperu
 [repo]: https://github.com/emedinaa/sharedpreferenceshelper
+[asp]: https://developer.android.com/training/basics/data-storage/shared-preferences.
+[asp1]: https://developer.android.com/reference/android/content/SharedPreferences.html
 
 <style type="text/css">
 
