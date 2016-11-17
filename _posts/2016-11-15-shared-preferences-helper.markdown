@@ -30,9 +30,13 @@ Un ejemplo :
 Seria genial tener un clase  con la responsabilidad de manejar las operaciones del sharedpreferences y que podamos probar con test cases. A este clase la llamaré SharedPreferencesHelper. 
 
 ¿Qué responsabilidades tendría?
+
   - Limpiar el SP
+  
   - Agregar algún <Key, Value> 
+  
   - Editar algún <Key, Value> 
+  
   - Obtener algún <Key, Value> 
 
 Creamos un interfaz que defina el comportamiento del SP Helper
