@@ -1,107 +1,97 @@
 ---
-layout: default
+layout: home
+title: BLOG
+description: "The personal blog of Eduardo J. Medina Alfaro, Android Developer at Mapsalud."
+headline: An Developer's Diary
+tags: [Eduardo, Medina, Alfaro, android, gdglima, blog, androiddevperu, kotlinperu, edu, Comunidad Android, peru,droidlatino]
 ---
+{% if site.paginate %}
+	{% for post in paginator.posts %}
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    <span class="day">
+                        {{ post.date | date: "%d" }}
+                    </span>
+                    <span class="month-year">
+                        {{ post.date | date: "%B %Y" }}
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="{{ site.url }}{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>{{ post.content | strip_html | truncatewords:40 }}</p>
+            </section>
+            
+                <div class="notepad-index-post-tags">
+                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+                    
+                </div>
+            
+        </div>
+    </article>
+	{% endfor %}
+    <nav class="pagination" role="navigation">
+    {% if paginator.previous_page %}
+	    {% if paginator.previous_page == 1 %}
+	    <a class="newer-posts" href="{{ site.url }}"><i class="fa fa-chevron-left"></i> Newer</a>
+	    {% else %}
+	    <a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> Newer</a>
+	    {% endif %}
+	{% else %}
+    <span class="newer-posts faded"><i class="fa fa-chevron-left"></i> Newer</span>
+    {% endif %}
 
-<style type="text/css">
-
-.share-page {
-    text-align: center;
-    background: $secondary-color;
-    color: $light-color;
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin: 1.5 * $spacing-unit 0;
-
-    a {
-        font-weight: 700;
-        color: #fff;
-        margin-left: 10px;
-
-        &:hover {
-            border-bottom: 1px dashed #fff;
-        }
-    }
-}
-</style>
-
-<div class="home">
-
-<h1 class="page-heading">Repositorios en github sobre desarrollo para Android</h1>
-<ul>
-  <li>
-    Android
-    <ul>
-      <li> Fragments y Activities <a href="https://github.com/emedinaa/fragment_activity">https://github.com/emedinaa/fragment_activity</a></li>
-    </ul>
-  </li>
-  <li>
-   Android UI
-    <ul>
-      <li>Custom Dialog <a href="https://github.com/emedinaa/android_custom_dialog_fragment">https://github.com/emedinaa/android_custom_dialog_fragment</a></li>
-      <li>Custom Component <a href="https://github.com/emedinaa/aiesec_pucp_custom_comp_android">https://github.com/emedinaa/aiesec_pucp_custom_comp_android</a></li>
-    </ul>
-  </li>
-  <li>
-    Kotlin
-      <ul>
-        <li>Kotlin MVP <a href="https://github.com/emedinaa/Kotlin-mvp">https://github.com/emedinaa/Kotlin-mvp</a></li>
-        <li>Kotlin Kata <a href="https://github.com/emedinaa/FizzBuzz-Kata-Kotlin">https://github.com/emedinaa/FizzBuzz-Kata-Kotlin</a></li>
-        <li>Pokedex Kotlin <a href="https://github.com/emedinaa/Pokedex-Kotlin">https://github.com/emedinaa/Pokedex-Kotlin</a></li>
-        <li>Kotlin Patterns <a href="https://github.com/emedinaa/kotlin-patterns">
-        https://github.com/emedinaa/kotlin-patterns</a></li>
-      </ul>
-  </li>
-  <li>
-   Arquitectura
-      <ul>
-          <li>Android Clean Architecture <a href="https://github.com/emedinaa/android-clean-architecture">https://github.com/emedinaa/android-clean-architecture</a></li>
-          <li>Android MVP <a href="https://github.com/emedinaa/android-mvp">https://github.com/emedinaa/android-mvp</a></li>
-      </ul>
-  </li>
-  <li>
-    Helpers
-      <ul>
-          <li>SharedPreferences Helper <a href="https://github.com/emedinaa/sharedpreferenceshelper">https://github.com/emedinaa/sharedpreferenceshelper</a></li>
-      </ul>
-  </li>
-  <li>
-    Animaciones
-      <ul>
-          <li>Canvas Animation <a href="https://github.com/emedinaa/android_canvas_animation">https://github.com/emedinaa/android_canvas_animation</a></li>
-          <li>Rebound Effect <a href="https://github.com/emedinaa/rebound_effect_button">https://github.com/emedinaa/rebound_effect_button</a></li>
-      </ul>
-  </li>
-  <li>Cloud
-      <ul>
-          <li> Android + BackendLess <a href="https://github.com/emedinaa/Android-Backendless">https://github.com/emedinaa/Android-Backendless</a></li>
-          <li> Android + Parse <a href="https://github.com/emedinaa/android_parse">https://github.com/emedinaa/android_parse</a></li>
-          <li> Android + PHP <a href="https://github.com/emedinaa/android_volley_php">https://github.com/emedinaa/android_volley_php</a></li>
-          <li> Android + Drupal <a href="https://github.com/emedinaa/android_drupal">https://github.com/emedinaa/android_drupal</a></li>
-      </ul>
-  </li>
-</ul> 
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-  <div class="share-page">
-    Compartir en &rarr;
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
-  </div>
-
-</div>
+    
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    	{% if paginator.next_page %} 
+        <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">Older <i class="fa fa-chevron-right"></i></a>
+    	{% else %}
+    	<span class="older-posts faded">Older <i class="fa fa-chevron-right"></i></span>
+    	{% endif %}
+	</nav>
+{% else %}
+	{% for post in site.posts %}
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    <span class="day">
+                        {{ post.date | date: "%d" }}
+                    </span>
+                    <span class="month-year">
+                        {{ post.date | date: "%B %Y" }}
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="{{ site.url }}{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>{{ post.content | strip_html | truncatewords:100 }}</p>
+            </section>
+            
+                <div class="notepad-index-post-tags">
+                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+                    
+                </div>
+            
+        </div>
+    </article>
+	{% endfor %}  
+{% endif %}
