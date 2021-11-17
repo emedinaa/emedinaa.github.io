@@ -7,5 +7,5 @@ alt: image-alt
 project-date: November 2021
 #client: Start Bootstrap
 #category: Web Development
-description: Android - GridLayout sample <a href="https://github.com/emedinaa/GridLayout">https://github.com/emedinaa/GridLayout</a>
+description: Android - GridLayout programmatically sample<br><a href="https://github.com/emedinaa/GridLayout">https://github.com/emedinaa/GridLayout</a>
 ---
