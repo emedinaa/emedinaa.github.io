@@ -1,0 +1,81 @@
+block in append_cflags: checking for whether -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri is accepted as CFLAGS... -------------------- yes
+
+"xcrun clang -o conftest -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -DUSE_FFI_CLOSURE_ALLOC -std=c99 conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib -L. -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.6.Internal.sdk/usr/local/lib     -lruby.2.6   "
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.6.Internal.sdk/usr/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"xcrun clang -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -DUSE_FFI_CLOSURE_ALLOC -std=c99  -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include is accepted as CFLAGS... -------------------- yes
+
+"xcrun clang -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -DUSE_FFI_CLOSURE_ALLOC -std=c99 -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri  -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include/libxml2 is accepted as CFLAGS... -------------------- yes
+
+"xcrun clang -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -DUSE_FFI_CLOSURE_ALLOC -std=c99 -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include  -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include/libxml2 -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+--------------------
+
+have_header: checking for libxml/tree.h... -------------------- yes
+
+"xcrun clang -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -DUSE_FFI_CLOSURE_ALLOC -std=c99 -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include/libxml2   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/tree.h>
+/* end */
+
+--------------------
+
+have_header: checking for nokogiri.h... -------------------- yes
+
+"xcrun clang -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -DUSE_FFI_CLOSURE_ALLOC -std=c99 -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include -I/Users/edmedina/Documents/Edu/Github/Blog/freelancer-theme/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.12.5-x86_64-darwin/ext/nokogiri/include/libxml2   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <nokogiri.h>
+/* end */
+
+--------------------
+

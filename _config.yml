@@ -1,159 +1,71 @@
-title:            Senior Android Developer at @Mapsalud 
-description:      "Eduardo J. Medina Alfaro"
-logo:             android.png
-disqus_shortname: emedinaa
-share:            true
-dropcap:			true
-# Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
-# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  
+# Site settings
+title: Mobile Dev Notes
+email: emedinaa@gmail.com
+url: http://emedinaa.github.io/
+description: "Mobile Dev Notes - android samples on gitbub - android - ios - kotlin - swift"
+keywords: "kotlin, android, mobile, ios"
+skills: "Mobile Developer - Software Architect - Instructor"
+meta_author: Medina Alfaro Eduardo José
 
-# Owner/author information
-owner:
-  name:           Eduardo José Medina Alfaro
-  avatar:         hmfaysal.jpg
-  email:          emedinaa@gmail.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Android Developer at Mapsalud
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        eduardomedina
-  facebook:       emedinaa
-  github:         emedinaa      
+# Google webmaster tools
+google_verify:
 
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/+EduardoJoseMedinaAlfaro
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
-# Links to include in footer navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Posts
-    url: /featured
-  - title: Categories
-    url: /categories
-  - title: About
-    url: /about
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: disqus
 
-# Gems
-gems: [jekyll-paginate]
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Lima
-future:      true
-highlighter: rouge
-markdown:    kramdown
-paginate:    5
-paginate_path: "page:num"
+# Color settings (hex-codes without the leading hash-tag)
+# #3DDC84
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  syntax_highlighter_opts: true
+# Footer settings
+footer:
+  copyright: Dr. Henry Jekyll
+  location: Location
+  social: Around the Web
+  credits: Credits
 
-  syntax_highlighter_opts:
-    line_numbers: 
-    line_numbers_start: 1
-    tab_width: 4
-    bold_every: 10
-    css: class
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/eduardomedina
+  - title: facebook
+    url: https://www.facebook.com/eduardo.jose.medina.alfaro/
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/2805169/emedinaa
+  - title: bitbucket
+    url: https://bitbucket.org/emedinaa/
+  - title: github
+    url: http://github.com/emedinaa
 
-prose:
-  rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/Notepad/'
-  relativeLinks: 'http://hmfaysal.github.io/Notepad/links.jsonp'
-  media: 'images'
-  metadata:
-    _posts:
-      - name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: "true"
-      - name: "layout"
-        field:
-          element: "hidden"
-          label: "Layout"
-          value: "post"
-      - name: "title"
-        field:
-          label: "Title"
-          element: "text"
-          value: "An Awesome Headline!"
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          placeholder: "Enter Post Description"
-      - name: "headline"
-        field:
-          element: "text"
-          label: "beadline"
-          placeholder: "Enter Post Headline"
-      - name: "modified"
-        field:
-          element: "text"
-          label: "Has this page been modified?"
-          placeholder: "YYYY-MM-DD"
-      - name: "categories"
-        field:
-          element: "multiselect"
-          label: "Add categories"
-          placeholder: "Choose categories"
-          value: personal
-          options:
-            - name: "Personal"
-              value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
-            - name: "Interesting"
-              value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
-          alterable: true
-      - name: "tags"
-        field:
-          element: "text"
-          label: "Tags"
-          placeholder: "Enter tags, separated by spaces"
-      - name: "imagefeature"
-        field:
-          element: "text"
-          label: "Featured Image"
-          placeholder: "somefile.jpg"
-      - name: "mathjax"
-        field:
-          element: "checkbox"
-          label: "MathJax"
-          value: false
-      - name: "featured"
-        field:
-          element: "checkbox"
-          label: "Featured?"
-          value: false
-      - name: "comments"
-        field:
-          element: "checkbox"
-          label: "Comments"
-          value: false
+# Postal address (add as many lines as necessary)
+address:
+  - line: Lima, Perú
 
+# Credits content
+credits: 'Jekyll theme template with <a href="http://startbootstrap.com">Bootstrap</a>.'
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
