@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 8
-date: 2021-11-17
+date: 2021-11-14
 img: cake_math.png
 alt: image-alt
 project-date: November 2021
