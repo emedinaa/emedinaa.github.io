@@ -7,5 +7,5 @@ alt: image-alt
 project-date: November 2021
 #client: Start Bootstrap
 #category: Web Development
-description: Android - Math experiments <a href="https://github.com/emedinaa/math-experiments">https://github.com/emedinaa/math-experiments</a>
+description: Android - Math experiments<br><a href="https://github.com/emedinaa/math-experiments">https://github.com/emedinaa/math-experiments</a>
 ---
